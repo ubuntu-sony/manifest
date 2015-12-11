@@ -6,6 +6,9 @@
   <remote  name="phablet"
            fetch="https://code-review.phablet.ubuntu.com"
            review="code-review.phablet.ubuntu.com" />
+           
+  <remote name="sony"
+           fetch="git://github.com/sonyxperiadev/" />
 
   <remote  name="ubuntu"
            fetch="git://github.com/ubuntu-sony/" />         
