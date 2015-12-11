@@ -7,6 +7,9 @@
            fetch="https://code-review.phablet.ubuntu.com"
            review="code-review.phablet.ubuntu.com" />
 
+  <remote  name="ubuntu"
+           fetch="git://github.com/ubuntu-sony/" />         
+
   <default revision="refs/tags/android-5.1.1_r5"
            remote="phablet"
            sync-j="4" />
@@ -34,6 +37,8 @@
   <project path="device/moto/shamu" name="aosp/device/moto/shamu" groups="device,shamu" revision="personal/w-ondra/phablet-5.1.1_r5" />
   <project path="device/sample" name="aosp/device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="aosp/device/samsung/manta" groups="device,manta" revision="personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="ubuntu" revision="l-mr1" />
+  <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="ubuntu" revision="l-mr1" />
   <project path="external/aac" name="aosp/platform/external/aac" groups="pdk" />
   <project path="external/bison" name="aosp/platform/external/bison" groups="pdk" />
   <project path="external/bzip2" name="aosp/platform/external/bzip2" groups="pdk" />
@@ -109,6 +114,7 @@
   <project path="hardware/libhardware_legacy" name="aosp/platform/hardware/libhardware_legacy" groups="pdk" revision="personal/w-ondra/phablet-5.1.1_r5" />
   <project path="hardware/qcom/audio" name="aosp/platform/hardware/qcom/audio" groups="qcom,qcom_audio" revision="personal/w-ondra/phablet-5.1.1_r5" />
   <project path="hardware/qcom/bt" name="aosp/platform/hardware/qcom/bt" groups="qcom" />
+  <project path="hardware/qcom/camera" name="camera" groups="device" remote="sony" revision="aosp/AU_LINUX_ANDROID_LA.BF64.1.1_RB1.05.00.02.172.061" />
   <project path="hardware/qcom/display" name="aosp/platform/hardware/qcom/display" groups="qcom,qcom_display" revision="personal/w-ondra/phablet-5.1.1_r5" />
   <project path="hardware/qcom/gps" name="aosp/platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
   <project path="hardware/qcom/keymaster" name="aosp/platform/hardware/qcom/keymaster" groups="qcom" />
@@ -174,6 +180,13 @@
   <project path="system/security" name="aosp/platform/system/security" groups="pdk" />
   <project path="system/vold" name="aosp/platform/system/vold" groups="pdk" revision="personal/w-ondra/phablet-5.1.1_r5" />
   <project path="tools/external/fat32lib" name="aosp/platform/tools/external/fat32lib" groups="tools" />
+  <project path="vendor" name="vendor-sony-blobs" remote="ubuntu" revision="l-mr1" />
+  <project path="vendor/sony/kernel" name="vendor-sony-kernel" groups="device" remote="ubuntu" revision="l-mr1" />
+  <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
+  <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
+  <project path="vendor/sony/system/macaddrsetup" name="macaddrsetup" groups="device" remote="sony" revision="master" />
+  <project path="vendor/sony/system/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
+  <project path="device/qcom/sepolicy" name="device-qcom-sepolicy" groups="device" remote="sony" revision="l-mr1" />
 
   <!-- Ubuntu specific repos -->
 <!--   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" revision="cm-12.0" /> -->
