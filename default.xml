@@ -41,6 +41,7 @@
   <project path="device/sample" name="aosp/device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="aosp/device/samsung/manta" groups="device,manta" revision="personal/w-ondra/phablet-5.1.1_r5" />
   <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="ubuntu" revision="l-mr1" />
+  <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="ubuntu" revision="l-mr1" />
   <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="ubuntu" revision="l-mr1" />
   <project path="external/aac" name="aosp/platform/external/aac" groups="pdk" />
   <project path="external/bison" name="aosp/platform/external/bison" groups="pdk" />
